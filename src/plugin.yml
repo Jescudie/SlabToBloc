@@ -1,0 +1,9 @@
+name: EconomieServ
+version: 1.0
+author: indes33
+
+main: fr.indestructible33.projet.Main
+
+commands:
+  test1:
+    description: Ceci est une commande de test
