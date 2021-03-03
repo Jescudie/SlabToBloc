@@ -9,3 +9,5 @@ commands:
     description: Ceci est une commande de test
   alerte:
     description: Ceci est une commande d'alerte
+  spawnonme:
+    description: Ceci est une commande pour faire spawn sur soi un squelette
