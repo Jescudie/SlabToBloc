@@ -26,16 +26,25 @@ public class PlayerSpawn implements Listener {
 
         assert modifEpee != null;
 
-        modifEpee.setDisplayName("§cUne bonne grosse bombe");
-        modifEpee.setLore(Arrays.asList("§dJe détruis tous les mécréants sur mon chemin"));
+        modifEpee.setDisplayName("§cJe suis votre épée maitre");
+        modifEpee.setLore(Arrays.asList("§dJe vous amenerai jusqu'à la victoire finale"));
         modifEpee.addEnchant(Enchantment.DAMAGE_ALL, 200, true);
         modifEpee.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         epee.setItemMeta(modifEpee);
 
         player.getInventory().setItemInMainHand(epee);
 
-        player.updateInventory();
 
+        ItemStack shield = new ItemStack(Material.SHIELD, 1);
+        ItemMeta modifShield = shield.getItemMeta();
+
+        modifShield.setDisplayName("§cJe suis le gros bouclier !");
+        modifShield.setLore(Arrays.asList("§dJe suis là pour vous protéger"));
+        shield.setItemMeta(modifShield);
+
+        player.getInventory().setItemInOffHand(shield);
+
+        player.updateInventory();
     }
 
 }
