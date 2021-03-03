@@ -21,43 +21,43 @@ public class Recipes implements Listener {
         this.pl.getServer().addRecipe(Oak);
 
         NamespacedKey Spruce_key = new NamespacedKey(this.pl, "stb_Spruce");
-        ShapedRecipe Spruce = new ShapedRecipe(Spruce_key, new ItemStack(Material.SPRUCE, 2));
+        ShapedRecipe Spruce = new ShapedRecipe(Spruce_key, new ItemStack(Material.SPRUCE_PLANKS, 2));
         Spruce.shape(" SS"," SS","   ");
         Spruce.setIngredient('S', Material.SPRUCE_SLAB);
         this.pl.getServer().addRecipe(Spruce);
 
         NamespacedKey Birch_key = new NamespacedKey(this.pl, "stb_Birch");
-        ShapedRecipe Birch = new ShapedRecipe(Birch_key, new ItemStack(Material.BIRCH, 2));
+        ShapedRecipe Birch = new ShapedRecipe(Birch_key, new ItemStack(Material.BIRCH_PLANKS, 2));
         Birch.shape(" SS"," SS","   ");
-        Birch.setIngredient('S', Material.Birch_SLAB);
+        Birch.setIngredient('S', Material.BIRCH_SLAB);
         this.pl.getServer().addRecipe(Birch);
 
         NamespacedKey Jungle_key = new NamespacedKey(this.pl, "stb_Jungle");
-        ShapedRecipe Jungle = new ShapedRecipe(Jungle_key, new ItemStack(Material.JUNGLE, 2));
+        ShapedRecipe Jungle = new ShapedRecipe(Jungle_key, new ItemStack(Material.JUNGLE_PLANKS, 2));
         Jungle.shape(" SS"," SS","   ");
         Jungle.setIngredient('S', Material.JUNGLE_SLAB);
         this.pl.getServer().addRecipe(Jungle);
 
         NamespacedKey Acacia_key = new NamespacedKey(this.pl, "stb_Acacia");
-        ShapedRecipe Acacia = new ShapedRecipe(Acacia_key, new ItemStack(Material.ACACIA, 2));
+        ShapedRecipe Acacia = new ShapedRecipe(Acacia_key, new ItemStack(Material.ACACIA_PLANKS, 2));
         Acacia.shape(" SS"," SS","   ");
         Acacia.setIngredient('S', Material.ACACIA_SLAB);
         this.pl.getServer().addRecipe(Acacia);
 
         NamespacedKey DarkOak_key = new NamespacedKey(this.pl, "stb_DarkOak");
-        ShapedRecipe DarkOak = new ShapedRecipe(DarkOak_key, new ItemStack(Material.DARK_OAK, 2));
+        ShapedRecipe DarkOak = new ShapedRecipe(DarkOak_key, new ItemStack(Material.DARK_OAK_PLANKS, 2));
         DarkOak.shape(" SS"," SS","   ");
         DarkOak.setIngredient('S', Material.DARK_OAK_SLAB);
         this.pl.getServer().addRecipe(DarkOak);
 
         NamespacedKey Crimsom_key = new NamespacedKey(this.pl, "stb_Crimsom");
-        ShapedRecipe Crimsom = new ShapedRecipe(Crimsom_key, new ItemStack(Material.CRIMSOM, 2));
+        ShapedRecipe Crimsom = new ShapedRecipe(Crimsom_key, new ItemStack(Material.CRIMSON_PLANKS, 2));
         Crimsom.shape(" SS"," SS","   ");
-        Crimsom.setIngredient('S', Material.CRIMSOM_SLAB);
+        Crimsom.setIngredient('S', Material.CRIMSON_SLAB);
         this.pl.getServer().addRecipe(Crimsom);
 
         NamespacedKey Warped_key = new NamespacedKey(this.pl, "stb_Warped");
-        ShapedRecipe Warped = new ShapedRecipe(Warped_key, new ItemStack(Material.WARPED, 2));
+        ShapedRecipe Warped = new ShapedRecipe(Warped_key, new ItemStack(Material.WARPED_PLANKS, 2));
         Warped.shape(" SS"," SS","   ");
         Warped.setIngredient('S', Material.WARPED_SLAB);
         this.pl.getServer().addRecipe(Warped);
@@ -87,7 +87,7 @@ public class Recipes implements Listener {
         this.pl.getServer().addRecipe(CutSandstone);
 
         NamespacedKey PetrifiedOak_key = new NamespacedKey(this.pl, "stb_PetrifiedOak");
-        ShapedRecipe PetrifiedOak = new ShapedRecipe(PetrifiedOak_key, new ItemStack(Material.PETRIFIED_OAK, 2));
+        ShapedRecipe PetrifiedOak = new ShapedRecipe(PetrifiedOak_key, new ItemStack(Material.OAK_PLANKS, 2));
         PetrifiedOak.shape(" SS"," SS","   ");
         PetrifiedOak.setIngredient('S', Material.PETRIFIED_OAK_SLAB);
         this.pl.getServer().addRecipe(PetrifiedOak);
@@ -99,9 +99,9 @@ public class Recipes implements Listener {
         this.pl.getServer().addRecipe(Cobblestone);
 
         NamespacedKey Brick_key = new NamespacedKey(this.pl, "stb_Brick");
-        ShapedRecipe Brick = new ShapedRecipe(Brick_key, new ItemStack(Material.BRICK_STONE, 2));
+        ShapedRecipe Brick = new ShapedRecipe(Brick_key, new ItemStack(Material.BRICK, 2));
         Brick.shape(" SS"," SS","   ");
-        Brick.setIngredient('S', Material.Brick_SLAB);
+        Brick.setIngredient('S', Material.BRICK_SLAB);
         this.pl.getServer().addRecipe(Brick);
 
         NamespacedKey StoneBricks_key = new NamespacedKey(this.pl, "stb_StoneBricks");
@@ -117,7 +117,7 @@ public class Recipes implements Listener {
         this.pl.getServer().addRecipe(NetherBrick);
 
         NamespacedKey Quartz_key = new NamespacedKey(this.pl, "stb_Quartz");
-        ShapedRecipe Quartz = new ShapedRecipe(Quartz_key, new ItemStack(Material.QUARTZ, 2));
+        ShapedRecipe Quartz = new ShapedRecipe(Quartz_key, new ItemStack(Material.QUARTZ_BLOCK, 2));
         Quartz.shape(" SS"," SS","   ");
         Quartz.setIngredient('S', Material.QUARTZ_SLAB);
         this.pl.getServer().addRecipe(Quartz);
@@ -135,7 +135,7 @@ public class Recipes implements Listener {
         this.pl.getServer().addRecipe(CutRedSandstone);
 
         NamespacedKey Purpur_key = new NamespacedKey(this.pl, "stb_Purpur");
-        ShapedRecipe Purpur = new ShapedRecipe(Purpur_key, new ItemStack(Material.PURPUR, 2));
+        ShapedRecipe Purpur = new ShapedRecipe(Purpur_key, new ItemStack(Material.PURPUR_BLOCK, 2));
         Purpur.shape(" SS"," SS","   ");
         Purpur.setIngredient('S', Material.PURPUR_SLAB);
         this.pl.getServer().addRecipe(Purpur);
