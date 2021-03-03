@@ -16,7 +16,7 @@ public class Main extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         super.onEnable();
-        Bukkit.getConsoleSender().sendMessage(ChatColor.GREEN + "Le plugin est allumer");
+        Bukkit.getConsoleSender().sendMessage(ChatColor.GREEN + "Le plugin est allumé");
         getCommand("test10").setExecutor(new Test());
         pm.registerEvents(new Recipes(this), this);
         pm.registerEvents(new Recipes1(this), this);
@@ -24,6 +24,6 @@ public class Main extends JavaPlugin implements Listener {
 
     @Override
     public void onDisable() {
-        Bukkit.getConsoleSender().sendMessage(ChatColor.DARK_PURPLE + "Le plugin viens de s'arreter");
+        Bukkit.getConsoleSender().sendMessage(ChatColor.DARK_PURPLE + "Le plugin vient de s'arreter");
     }
 }
