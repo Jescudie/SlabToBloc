@@ -30,6 +30,7 @@ public class Main extends JavaPlugin implements Listener {
         getCommand("delhome").setExecutor(new Home());
         getCommand("test10").setExecutor(new Test());
         getCommand("alerte").setExecutor(new Alerte());
+        getCommand("spwanonme").setExecutor(new SpawnOnMe());
         getServer().getPluginManager().registerEvents(new PlayerSpawn(), this);
         pm.registerEvents(new Recipes(this), this);
         pm.registerEvents(new Recipes1(this), this);

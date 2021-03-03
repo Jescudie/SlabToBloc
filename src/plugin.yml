@@ -7,9 +7,12 @@ main: fr.indes33.slabtobloc.Main
 commands:
   test10:
     description: Ceci est une commande de test
-  alert:
+  alerte:
+    description: Ceci est une commande d'alerte
+  alerte:
     description: Ceci est un broadcast custom
-    permission: bc.use
+  spawnonme:
+    description: Ceci est une commande pour faire spawn sur soi un squelette
   spawn:
     description: commande pour se tp au spawn du serv
   sethome:
