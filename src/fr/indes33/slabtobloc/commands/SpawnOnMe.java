@@ -1,4 +1,4 @@
-package fr.indes33.slabtobloc;
+package fr.indes33.slabtobloc.commands;
 
 import org.bukkit.Location;
 import org.bukkit.World;

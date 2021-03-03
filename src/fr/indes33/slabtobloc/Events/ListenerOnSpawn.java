@@ -1,50 +1,44 @@
-package fr.indes33.slabtobloc.commands;
+package fr.indes33.slabtobloc.Events;
 
-import org.bukkit.event.Listener;
-import java.util.Arrays;
-
+import fr.indes33.slabtobloc.Main;
 import org.bukkit.Material;
+import org.bukkit.NamespacedKey;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import java.util.Arrays;
 
-public class PlayerSpawn implements Listener {
+public class ListenerOnSpawn implements Listener {
 
     @EventHandler
-    public void swordWhenPlayerSpawn(PlayerJoinEvent e) {
+    public void onJoin(PlayerJoinEvent event) {
 
-        Player player = e.getPlayer();
+        Player player = event.getPlayer();
         player.getInventory().clear();
 
         ItemStack epee = new ItemStack(Material.DIAMOND_SWORD, 1);
         ItemMeta modifEpee = epee.getItemMeta();
-
-        assert modifEpee != null;
-
         modifEpee.setDisplayName("§cJe suis votre épée maitre");
         modifEpee.setLore(Arrays.asList("§dJe vous amenerai jusqu'à la victoire finale"));
         modifEpee.addEnchant(Enchantment.DAMAGE_ALL, 200, true);
         modifEpee.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         epee.setItemMeta(modifEpee);
 
-        player.getInventory().setItemInMainHand(epee);
-
-
         ItemStack shield = new ItemStack(Material.SHIELD, 1);
         ItemMeta modifShield = shield.getItemMeta();
-
         modifShield.setDisplayName("§cJe suis le gros bouclier !");
         modifShield.setLore(Arrays.asList("§dJe suis là pour vous protéger"));
         shield.setItemMeta(modifShield);
 
+        player.getInventory().setItemInMainHand(epee);
         player.getInventory().setItemInOffHand(shield);
-
         player.updateInventory();
     }
-
 }
