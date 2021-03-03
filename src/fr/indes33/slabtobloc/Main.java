@@ -24,6 +24,8 @@ public class Main extends JavaPlugin implements Listener {
         super.onEnable();
         Bukkit.getConsoleSender().sendMessage(ChatColor.GREEN + "Le plugin est allumer");
         getCommand("sethome").setExecutor(new Home());
+        getCommand("home").setExecutor(new Home());
+        getCommand("delhome").setExecutor(new Home());
         getCommand("test10").setExecutor(new Test());
         pm.registerEvents(new Recipes(this), this);
         pm.registerEvents(new Recipes1(this), this);
