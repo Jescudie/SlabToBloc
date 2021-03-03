@@ -139,6 +139,5 @@ public class Recipes implements Listener {
         Purpur.shape(" SS"," SS","   ");
         Purpur.setIngredient('S', Material.PURPUR_SLAB);
         this.pl.getServer().addRecipe(Purpur);
-
     }
 }

@@ -125,5 +125,6 @@ public class Recipes1 implements Listener {
         DarkPrismarine.shape(" SS"," SS","   ");
         DarkPrismarine.setIngredient('S', Material.POLISHED_BLACKSTONE_BRICK_SLAB);
         this.pl.getServer().addRecipe(PolishedBlackStoneBrick);
+      
     }
 }

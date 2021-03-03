@@ -7,5 +7,14 @@ main: fr.indes33.slabtobloc.Main
 commands:
   test10:
     description: Ceci est une commande de test
-  alerte:
-    description: Ceci est une commande d'alerte
+  alert:
+    description: Ceci est un broadcast custom
+    permission: bc.use
+  spawn:
+    description: commande pour se tp au spawn du serv
+  sethome:
+    description: commande pour definir son home
+  home:
+    description: commande pour se tp a son home
+  delhome:
+    description: commande pour suprimer un home
