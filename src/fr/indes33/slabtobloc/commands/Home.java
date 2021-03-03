@@ -49,11 +49,26 @@ public class Home implements CommandExecutor {
                     }
                 } else {
                     player.sendMessage("La comande est : /home <nom de votre home>");
-                    return false;
                 }
             }
         }
 
+        if(label.equalsIgnoreCase("delhome")){
+            if(sender instanceof Player){
+                Player player = (Player) sender;
+                if(args.length == 1){
+                    if(Main.getInstance().getConfig().contains("home."+ player.getUniqueId().toString()+"."+args[0])){
+                        Main.getInstance().getConfig().set("home."+ player.getUniqueId().toString()+"."+args[0], null);
+                        Main.getInstance().saveConfig();
+                        player.sendMessage("le home "+args[0]+ " a été supprimé !");
+                    } else {
+                        player.sendMessage("le home "+args[0]+ " n'existe pas !");
+                    }
+                } else {
+                    player.sendMessage("La comande est : /delhome <nom>");
+                }
+            }
+        }
 
         return false;
     }
