@@ -28,7 +28,7 @@ public class Main extends JavaPlugin implements Listener {
         getCommand("delhome").setExecutor(new Home());
         getCommand("test").setExecutor(new Test());
         getCommand("alerte").setExecutor(new Alerte());
-        getCommand("spwanonme").setExecutor(new SpawnOnMe());
+        getCommand("spawnonme").setExecutor(new SpawnOnMe());
         getServer().getPluginManager().registerEvents(new ListenerOnSpawn(), this);
         getServer().getPluginManager().registerEvents(new ListenerRecipes(this), this);
     }
