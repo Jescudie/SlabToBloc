@@ -13,8 +13,8 @@ public class Test implements CommandExecutor {
         if (sender instanceof Player){
             Player player = (Player)sender;
 
-            if(cmd.getName().equalsIgnoreCase("test10")){
-                player.sendMessage(" §eBravo tu as réussi le §ctest10 !");
+            if(cmd.getName().equalsIgnoreCase("test")){
+                player.sendMessage(" §eBravo tu as réussi le §ctest !");
                 return true;
             }
 

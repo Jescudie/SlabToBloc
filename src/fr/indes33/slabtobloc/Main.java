@@ -21,11 +21,12 @@ public class Main extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         super.onEnable();
-        Bukkit.getConsoleSender().sendMessage(ChatColor.GREEN + "Le plugin est allumé");
+        instance = this;
+        Bukkit.getConsoleSender().sendMessage(ChatColor.GREEN + "Le plugin vient de s'allumer");
         getCommand("sethome").setExecutor(new Home());
         getCommand("home").setExecutor(new Home());
         getCommand("delhome").setExecutor(new Home());
-        getCommand("test10").setExecutor(new Test());
+        getCommand("test").setExecutor(new Test());
         getCommand("alerte").setExecutor(new Alerte());
         getCommand("spwanonme").setExecutor(new SpawnOnMe());
         getServer().getPluginManager().registerEvents(new ListenerOnSpawn(), this);

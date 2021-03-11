@@ -1,11 +1,12 @@
 name: SlabToBloc
 version: 1.0
+api-version: 1.16
 author: indes33
 
 main: fr.indes33.slabtobloc.Main
 
 commands:
-  test10:
+  test:
     description: Ceci est une commande de test
   alerte:
     description: Ceci est une commande d'alerte
@@ -14,7 +15,7 @@ commands:
   spawn:
     description: commande pour se tp au spawn du serv
   sethome:
-    description: commande pour definir son home
+    description: commande pour definir un home
   home:
     description: commande pour se tp a son home
   delhome:

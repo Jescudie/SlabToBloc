@@ -14,15 +14,17 @@ public class SpawnOnMe implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String msg, String[] args) {
 
-        Player player = (Player) sender;
+        if (sender instanceof Player){
+            Player player = (Player)sender;
 
-        Location spawn = player.getLocation().add(2, 0, 0);
-        World world = player.getWorld();
+            if(cmd.getName().equalsIgnoreCase("spawnonme")){
+                Location spawn = player.getLocation().add(2, 0, 0);
+                World world = player.getWorld();
+                Skeleton squeleton = (Skeleton) world.spawnEntity(spawn, EntityType.SKELETON);
+                player.setPassenger(squeleton);
+                return true;
+            }
+        }
 
-        Skeleton squeleton = (Skeleton) world.spawnEntity(spawn, EntityType.SKELETON);
-        player.setPassenger(squeleton);
-        return true;
-
-
-    }
+        return false;   }
 }

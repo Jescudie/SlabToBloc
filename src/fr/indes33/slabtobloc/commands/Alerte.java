@@ -19,7 +19,7 @@ public class Alerte implements CommandExecutor {
                 bc.append(part + " ");
             }
 
-            Bukkit.broadcastMessage("[" + player.getName() + "]" + bc.toString());
+            Bukkit.broadcastMessage("[" + player.getName() + "] " + bc.toString());
         }
         return false;
     }
