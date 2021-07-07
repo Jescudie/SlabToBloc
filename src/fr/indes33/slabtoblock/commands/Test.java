@@ -1,4 +1,4 @@
-package fr.indes33.slabtobloc.commands;
+package fr.indes33.slabtoblock.commands;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

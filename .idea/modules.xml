@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SlabToBloc.iml" filepath="$PROJECT_DIR$/SlabToBloc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SlabToBlock.iml" filepath="$PROJECT_DIR$/SlabToBlock.iml" />
     </modules>
   </component>
 </project>
