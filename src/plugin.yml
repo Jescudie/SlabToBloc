@@ -4,3 +4,7 @@ api-version: 1.16
 author: indes33
 
 main: fr.indes33.slabtobloc.Main
+
+commands:
+  tasty:
+    description: Ceci est une commande de test
