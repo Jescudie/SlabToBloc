@@ -1,7 +1,7 @@
 package fr.indes33.slabtoblock;
 
 import fr.indes33.slabtoblock.Events.ListenerRecipes;
-import fr.indes33.slabtoblock.commands.Test;
+import fr.indes33.slabtoblock.Commands.Test;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.event.Listener;
