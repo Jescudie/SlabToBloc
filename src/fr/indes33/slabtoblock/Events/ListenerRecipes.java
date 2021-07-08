@@ -1,6 +1,6 @@
-package fr.indes33.slabtobloc.Events;
+package fr.indes33.slabtoblock.Events;
 
-import fr.indes33.slabtobloc.Main;
+import fr.indes33.slabtoblock.Main;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
