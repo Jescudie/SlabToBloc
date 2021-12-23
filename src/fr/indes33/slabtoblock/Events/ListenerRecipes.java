@@ -287,6 +287,30 @@ public class ListenerRecipes implements Listener {
         Diorite.setIngredient('S', Material.DIORITE_SLAB);
         this.pl.getServer().addRecipe(Diorite);
 
+        NamespacedKey Cobbled_Deepslate_key = new NamespacedKey(this.pl, "stb_Cobbled_deepslate");
+        ShapedRecipe Cobbled_Deepslate = new ShapedRecipe(Cobbled_Deepslate_key, new ItemStack(Material.COBBLED_DEEPSLATE, 2));
+        Cobbled_Deepslate.shape("SS","SS");
+        Cobbled_Deepslate.setIngredient('S', Material.COBBLED_DEEPSLATE_SLAB);
+        this.pl.getServer().addRecipe(Cobbled_Deepslate);
+
+        NamespacedKey Polished_Deepslate_key = new NamespacedKey(this.pl, "stb_Polished_Deepslate");
+        ShapedRecipe Polished_Deepslate = new ShapedRecipe(Polished_Deepslate_key, new ItemStack(Material.POLISHED_DEEPSLATE, 2));
+        Polished_Deepslate.shape("SS","SS");
+        Polished_Deepslate.setIngredient('S', Material.POLISHED_DEEPSLATE_SLAB);
+        this.pl.getServer().addRecipe(Polished_Deepslate);
+
+        NamespacedKey Deepslate_Brick_key = new NamespacedKey(this.pl, "stb_Deepslate_Brick");
+        ShapedRecipe Deepslate_Brick = new ShapedRecipe(Deepslate_Brick_key, new ItemStack(Material.DEEPSLATE_BRICKS, 2));
+        Deepslate_Brick.shape("SS","SS");
+        Deepslate_Brick.setIngredient('S', Material.DEEPSLATE_BRICK_SLAB);
+        this.pl.getServer().addRecipe(Deepslate_Brick);
+
+        NamespacedKey Deepslate_Tile_key = new NamespacedKey(this.pl, "stb_Deepslate_Tile");
+        ShapedRecipe Deepslate_Tile = new ShapedRecipe(Deepslate_Tile_key, new ItemStack(Material.DEEPSLATE_TILES, 2));
+        Deepslate_Tile.shape("SS","SS");
+        Deepslate_Tile.setIngredient('S', Material.DEEPSLATE_TILE_SLAB);
+        this.pl.getServer().addRecipe(Deepslate_Tile);
+
         NamespacedKey BlackStone_key = new NamespacedKey(this.pl, "stb_BlackStone");
         ShapedRecipe BlackStone = new ShapedRecipe(BlackStone_key, new ItemStack(Material.BLACKSTONE, 2));
         BlackStone.shape("SS","SS");
