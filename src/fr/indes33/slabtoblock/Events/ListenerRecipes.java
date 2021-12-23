@@ -17,6 +17,54 @@ public class ListenerRecipes implements Listener {
 
         Bukkit.resetRecipes();
 
+        NamespacedKey Cut_Copper_key = new NamespacedKey(this.pl, "stb_Cut_Copper");
+        ShapedRecipe Cut_Copper = new ShapedRecipe(Cut_Copper_key, new ItemStack(Material.CUT_COPPER, 2));
+        Cut_Copper.shape("SS","SS");
+        Cut_Copper.setIngredient('S', Material.CUT_COPPER_SLAB);
+        this.pl.getServer().addRecipe(Cut_Copper);
+
+        NamespacedKey Exposed_Cut_Copper_key = new NamespacedKey(this.pl, "stb_Exposed_Cut_Copper");
+        ShapedRecipe Exposed_Cut_Copper = new ShapedRecipe(Exposed_Cut_Copper_key, new ItemStack(Material.EXPOSED_CUT_COPPER, 2));
+        Exposed_Cut_Copper.shape("SS","SS");
+        Exposed_Cut_Copper.setIngredient('S', Material.EXPOSED_CUT_COPPER_SLAB);
+        this.pl.getServer().addRecipe(Exposed_Cut_Copper);
+
+        NamespacedKey Weathered_cut_copper_key = new NamespacedKey(this.pl, "stb_Weathered_cut_copper");
+        ShapedRecipe Weathered_cut_copper = new ShapedRecipe(Weathered_cut_copper_key, new ItemStack(Material.WEATHERED_CUT_COPPER, 2));
+        Weathered_cut_copper.shape("SS","SS");
+        Weathered_cut_copper.setIngredient('S', Material.WEATHERED_CUT_COPPER_SLAB);
+        this.pl.getServer().addRecipe(Weathered_cut_copper);
+
+        NamespacedKey Oxidized_cut_copper_key = new NamespacedKey(this.pl, "stb_Oxidized_cut_copper");
+        ShapedRecipe Oxidized_cut_copper = new ShapedRecipe(Oxidized_cut_copper_key, new ItemStack(Material.OXIDIZED_CUT_COPPER, 2));
+        Oxidized_cut_copper.shape("SS","SS");
+        Oxidized_cut_copper.setIngredient('S', Material.OXIDIZED_CUT_COPPER_SLAB);
+        this.pl.getServer().addRecipe(Oxidized_cut_copper);
+
+        NamespacedKey Waxed_Cut_Copper_key = new NamespacedKey(this.pl, "stb_Waxed_Cut_Copper");
+        ShapedRecipe Waxed_Cut_Copper = new ShapedRecipe(Waxed_Cut_Copper_key, new ItemStack(Material.WAXED_CUT_COPPER, 2));
+        Waxed_Cut_Copper.shape("SS","SS");
+        Waxed_Cut_Copper.setIngredient('S', Material.WAXED_CUT_COPPER_SLAB);
+        this.pl.getServer().addRecipe(Waxed_Cut_Copper);
+
+        NamespacedKey Waxed_Exposed_Cut_Copper_key = new NamespacedKey(this.pl, "stb_Waxed_Exposed_Cut_Copper");
+        ShapedRecipe Waxed_Exposed_Cut_Copper = new ShapedRecipe(Waxed_Exposed_Cut_Copper_key, new ItemStack(Material.WAXED_EXPOSED_CUT_COPPER, 2));
+        Waxed_Exposed_Cut_Copper.shape("SS","SS");
+        Waxed_Exposed_Cut_Copper.setIngredient('S', Material.WAXED_EXPOSED_CUT_COPPER_SLAB);
+        this.pl.getServer().addRecipe(Waxed_Exposed_Cut_Copper);
+
+        NamespacedKey Waxed_Weathered_cut_copper_key = new NamespacedKey(this.pl, "stb_Waxed_Weathered_cut_copper");
+        ShapedRecipe Waxed_Weathered_cut_copper = new ShapedRecipe(Waxed_Weathered_cut_copper_key, new ItemStack(Material.WAXED_WEATHERED_CUT_COPPER, 2));
+        Waxed_Weathered_cut_copper.shape("SS","SS");
+        Waxed_Weathered_cut_copper.setIngredient('S', Material.WAXED_WEATHERED_CUT_COPPER_SLAB);
+        this.pl.getServer().addRecipe(Waxed_Weathered_cut_copper);
+
+        NamespacedKey Waxed_Oxidized_cut_copper_key = new NamespacedKey(this.pl, "stb_Waxed_Oxidized_cut_copper");
+        ShapedRecipe Waxed_Oxidized_cut_copper = new ShapedRecipe(Waxed_Oxidized_cut_copper_key, new ItemStack(Material.WAXED_OXIDIZED_CUT_COPPER, 2));
+        Waxed_Oxidized_cut_copper.shape("SS","SS");
+        Waxed_Oxidized_cut_copper.setIngredient('S', Material.WAXED_OXIDIZED_CUT_COPPER_SLAB);
+        this.pl.getServer().addRecipe(Waxed_Oxidized_cut_copper);
+
         NamespacedKey Oak_key = new NamespacedKey(this.pl, "stb_Oak");
         ShapedRecipe Oak = new ShapedRecipe(Oak_key, new ItemStack(Material.OAK_PLANKS, 2));
         Oak.shape("SS","SS");
