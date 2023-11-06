@@ -1,3 +1,4 @@
-/.gradle/
 .idea
+.github
 /out/
+SlabToBlock.iml
