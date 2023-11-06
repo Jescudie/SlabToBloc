@@ -1,6 +1,5 @@
 package fr.indes33.slabtoblock;
 
-import fr.indes33.slabtoblock.Commands.Test;
 import fr.indes33.slabtoblock.Events.ListenerRecipes;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -14,7 +13,6 @@ public class Main extends JavaPlugin implements Listener {
     public void onEnable() {
         Bukkit.getConsoleSender().sendMessage(ChatColor.GREEN + "Le plugin \"SlabToBloc\" vient de s'allumer");
         getServer().getPluginManager().registerEvents(new ListenerRecipes(this), this);
-        getCommand("tasty").setExecutor(new Test());
     }
 
     @Override

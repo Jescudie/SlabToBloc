@@ -1,10 +1,7 @@
 name: SlabToBloc
-version: 1.1
-api-version: 1.16
+version: 1.3
+api-version: 1.20
 author: indes33
+description: Plugin pour recraft des bloc à partir de dalle
 
 main: fr.indes33.slabtoblock.Main
-
-commands:
-  tasty:
-    description: Ceci est une commande de test
